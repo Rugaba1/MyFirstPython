@@ -3,12 +3,12 @@
 # print(x)
 # print(y)
 # print(z)
-#
+
 # x="Python"
 # y="is"
 # z="awesome"
 # print(x+y+z)
-#
+
 # x="Awesome"
 # def myfunc():
 #     global x
@@ -39,7 +39,7 @@
 # test_string = "Dogs are better tha Cats"
 # print("Last elements: ", test_string[4:])
 # print("Second to last elements: ", test_string[:4])
-#
+
 # print(test_string[5:10])
 # prices = {"Eggs": 2.30,
 #           "Steak": 13.50,
@@ -200,9 +200,95 @@
 # thislist.reverse()
 # print(thislist)
 
-list1  = ["a","b","c"]
-list2 = [1,2,3]
+# list1  = ["a","b","c"]
+# list2 = [1,2,3]
 
-for x in list2:
-    list1.append(x)
-print(list1)
+# for x in list2:
+#     list1.append(x)
+# print(list1)
+
+# fruit = ("apple","banana","cherry","strawberry","raspberry")
+
+# (green,yellow,*red) = fruit
+
+# print(green)
+# print(yellow)
+# print(red)
+
+# thisset = {"apple","banana","cherry"}
+# print(thisset)
+
+# import datetime
+
+# x = datetime.datetime(2024, 2, 2)
+# print(x.strftime("%c"))
+
+# x = min(5,10,25)
+# y = max(5,10,25)
+
+# print(x)
+# print(y)
+
+# x = abs(-7.25)
+# print(x)
+
+# x = pow(4,3)
+# print(x)
+
+# import math
+
+# x = math.sqrt(64)
+# print(x)
+
+# x = math.pi
+
+# print(x)
+
+# number = [1,2,3]
+# number.append(5)
+# print(number)
+
+# for i in range(1,10):
+#     if i==3:
+#         break
+#     print(i)
+# print()
+# for i in range(1,10):
+#     if i==3:
+#         continue
+#     print(i)
+
+# school_nigth = True
+# if school_nigth == True:
+#     print("No Beer")
+# else:
+#     print("You may have a Beer")
+
+# school_nigth = False
+# if school_nigth == True:
+#     print("No Beer")
+# else:
+#     print("You may have a Beer")
+
+# Lew_is_tired = False
+# Lew_is_hungry = True
+# if Lew_is_tired is True:
+#     print("Lew has to teach")
+# elif Lew_is_hungry is True:
+#     print("No food for Lew")
+# else:
+#     print("Go on, have a biscuit")
+
+def multiply_function(a,b):
+    result = a*b
+    result2 = result * result
+    return result, result2
+
+number_list = [1, 2, 3]
+multiplier_list = [2, 4]
+for n in number_list:
+    print("__________________________________________")
+    for m in multiplier_list:
+        current_answer, current_answer2 = multiply_function(n, m)
+        print("The answer to %d * %d is : " %(n, m), current_answer)
+        print("The result of this squared is : " ,current_answer2)
